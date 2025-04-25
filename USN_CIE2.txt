@@ -1,1 +1,40 @@
 Retest request answers
+git init MyNewProject
+git config –global user.name “Prateeksha”
+git config –global user.email “prateekshasbca24@rvu.edu.in”
+echo ".tmp">>.gitignore
+git add .gitignore
+git commit -m “gitignore file committed”
+git remote add origin https://github.com/PrateekshaS2314/MyNewProject.git
+git checkout -b fix-bug
+echo "bugfix.txt file is created">>bugfix.txt
+git add bugfix.txt
+git commit -m "bugfix.txt created"
+mkdir docs
+git add docs
+git commit -m "directory created"
+echo "Documentation here">docs/readme.md
+git add docs/readme.md
+git commit -m "readme.md file created"
+echo "Documentation here">docs/changelog.md
+git add docs/changelog.md
+git commit -m "changelog.md file created"
+echo "Documentation here">docs/contribute.md
+git add docs/contribute.md
+git commit -m "contribute.md file created"
+git push -u origin fix-bug
+git checkout master
+echo "change made in master">bugfix.txt
+git add bugfix.txt
+git commit -m "change made from master(main) branch"
+git checkout fix-bug
+echo "change made in fix-bug">bugfix.txt
+git add bugfix.txt
+git commit -m "change made from fix-bug branch"
+git merge master
+vim bugfix.txt
+git add bugfix.txt
+git commit -m "conflict handled"
+for forking:
+fork from the github page
+
