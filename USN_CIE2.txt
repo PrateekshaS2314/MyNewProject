@@ -37,4 +37,11 @@ git add bugfix.txt
 git commit -m "conflict handled"
 for forking:
 fork from the github page
+git checkout -b 1RVU24BCA0069
+echo "Retest request answers">USN_CIE2.txt
+git add USN_CIE2.txt
+vim USN_CIE2.txt
+git add USN_CIE2.txt
+git commit -m "answers to retest had been added"
+git push origin 1RVU24BCA0069
 
